@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sarfo Electricals</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;+700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!----header section starts -->
+    <header>
+         <a href="#" class="logo"><i class="fas fa-power-off"></i>Sarfo Electricals</a>
+
+         <div id="menu-bar" class="fas fa-bars"></div>
+
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+         </nav>
+
+    </header> 
+      <!----header section ends --> 
+
+      
+      <!----header section Start -->
+      <section class="home" id="home">
+        <div class="content">
+          <h3>Our blog page</h3>
+          <p>We invite you to explore our wide range of electrical products, from lighting 
+            solutions to wiring and electrical accessories. Whether you're looking for solutions 
+            to enhance your home, upgrade your business, or complete an industrial project, 
+            Sarfo Electricals is here to assist you every step of the way.
+            A sole distributor and sale of Kabelmetal in Ashanti Region. We look forward to serving you 
+            and building a brighter, electrifying future together.</p>            
+            <h2>Visit Us to know more....</h2>
+              <a href="https://wa.me/+233246553183" class="btn-link">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              <a href="https://wa.me/+233240616999" class="btn-link">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+        </div>
+        <div class="image">
+          <img src="images/ban.png" alt="">
+        </div>
+      </section> 
+       <!----header section ends --> 
+
+    
+       <!--blog page content-->
+    <section class="blog-content">
+      <div>
+          <div  class="blog-left">
+              <img id="new-image" src="">
+              <h2 id="new-title"> </h2>
+              <p id="new-page"> </p>
+              <div class="comment-box">
+                  <h3>Leave Comment</h3>
+                  <form class="comment-form">
+                      <input type="text"  placeholder="Enter Name">
+                      <input type="email" placeholder="Enter Email">
+                      <textarea rows="5"  placeholder="Your Comment"></textarea> 
+                      <button type="" class="btn red-btn">Post Comment</button>  
+                  </form>    
+              </div>    
+          </div>  
+      </div>
+  </section>    
+
+      
+       <!----footer section start --> 
+       <section class="footer" id="footer">
+        <div class="footer-box">
+            <h2>Sarfo<span>Electricals</span></h2>
+            <p>Our Branches......</p> 
+          </div>
+     
+        <div class="footer-box contact-info">
+            <h3>Kumasi Depot</h3>
+            <span>(Asafo YF close to GRA Office)</span>
+            <span>0242 227 295 / 0592540085 / 0246553183</span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Adum Nuase</h3>
+            <span>(Close to UBA Bank)</span>
+            <span>0241042961 / 0548690217 / 0246553183</span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Adum KAMA Plaza</h3>
+            <span>(Close to Prison Roundabout)</span>
+            <span>0247711413 / 0246553183</span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Adum Boss</h3>
+            <span>(Boss FM Arena)</span>
+            <span>0540525809 / 0246553183</span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Working Hours</h3>
+            <span>Mondays - Fridays 8AM - 5PM</span>
+            <span>Saturdays 8AM - 4PM </span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Email</h3>
+            <span>sarfoelectricals@gmail.com</span>
+        </div> 
+        <div class="footer-box contact-info">
+            <h3>Chart us...</h3>
+            <div class="social">
+
+              <a href="https://wa.me/+233240616999">
+                <i class="fab fa-whatsapp"></i></a>
+              <a href="https://wa.me/+233246553183">
+                <i class="fab fa-whatsapp"></i></a>         
+            </div>
+            
+        </div> 
+    </section>
+       <!----footer section end --> 
+
+     
+    <!--- Optional JavaScript -->
+
+    <script>
+
+      const newtitle1 = localStorage.getItem('new-title');
+      const newpage1 = localStorage.getItem('new-page');
+
+      document.getElementById('new-title').textContent = newtitle1;
+      document.getElementById('new-page').textContent = newpage1;
+
+      // image load
+
+      const newImage1 = localStorage.getItem('new-image');
+      document.getElementById('new-image').src = newImage1;
+
+      document.body.appendChild(img);
+
+    </script>
+
+
+    <script src="script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+    
+  </body>
+</html>

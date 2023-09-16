@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sarfo Electricals</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;+700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!----header section starts -->
+    <header>
+         <a href="#" class="logo"><i class="fas fa-power-off"></i>Sarfo Electricals</a>
+
+         <div id="menu-bar" class="fas fa-bars"></div>
+
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+         </nav>
+
+    </header> 
+      <!--admin page content-->
+      <section class="blog-content">
+        <div>
+            <div class="blog-left">
+                <div class="comment-box">
+                    <h3>Edit our blog page</h3>                  
+                    <form id="form" class="comment-form">
+                        <input type="file" id="new-image" placeholder="Upload Image">
+                        <input type="text" id="new-title" placeholder="Enter Title">
+                        <textarea rows="1" id="new-page" placeholder="Enter Paragraph"></textarea> 
+                        <button type="submit" id="submit" class="btn red-btn" >Post</button>  
+                    </form>    
+                </div>  
+            </div>  
+        </div>
+        <button class="logout-btn">Logout</button>  
+
+    </section> 
+ 
+  
+
+     
+    <!--- Optional JavaScript -->
+<!--Javascript for toggle Menu-->
+<script src="./admin.js"></script>
+<script src="./script.js"></script>
+
+<script>
+
+    const form = document.getElementById('form');
+    const newtitle = document.getElementById('new-title');
+    const newpage = document.getElementById('new-page');
+    
+    form.addEventListener("submit", function(e) {
+        e.preventDefault()
+
+        const newtitleValue = newtitle.value;
+        const newpageValue = newpage.value;
+
+
+       localStorage.setItem('new-title', newtitleValue);
+       localStorage.setItem('new-page', newpageValue);
+        
+        alert('Blog Posted Successful')
+
+        //window.location.href = "blog.html";
+    })
+
+    // image load
+
+    const newImage = document.getElementById('new-image');
+    const btn = document.getElementById('submit');
+    
+    btn.addEventListener('click', () => {
+
+        //window.location.href = "/blog.html";
+    })
+
+    newImage.addEventListener('change', () =>{
+        const fr = new FileReader();
+        fr.readAsDataURL(newImage.files[0]);
+      
+        fr.addEventListener('load', () => {
+            const newImage = fr.result;
+     
+            localStorage.setItem('new-image', newImage)
+        })
+    })
+
+</script>
+
+    
+<!--- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+    
+  </body>
+</html>
