@@ -195,7 +195,7 @@ header .navbar a:hover{
     border: .1rem solid rgba(0,0,0,.3);
     cursor: pointer;
     border-radius: 3rem 0 3rem 0;
-    height: 400px;
+    height: 500px;
 }
 .speciality .box-container .box .image{
     height: 100%;
