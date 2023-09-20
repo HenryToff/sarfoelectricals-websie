@@ -519,7 +519,7 @@ iframe{
     filter: grayscale(0);
 }
 .footer{
-    background-color: #333;
+    background-color: #000;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(240px, auto));
     gap: 0.5rem;
