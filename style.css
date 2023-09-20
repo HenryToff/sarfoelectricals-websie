@@ -562,6 +562,12 @@ iframe{
 .footer-box li a:hover{
     color: #f44336;    
 }
+.footer .credit{
+    padding:2rem 1rem;
+    color:#fff;
+    font-weight:normal;
+    font-size:1.5rem;
+}
 .contact-info{
     display: flex;
     flex-direction: column;
