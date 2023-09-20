@@ -563,9 +563,9 @@ iframe{
     color: #f44336;    
 }
 .footer .credit{
-    padding:2rem 1rem;
+    text-align: center;
     color:#fff;
-    font-size:1.6rem;
+    font-size:1.2rem;
 }
 .contact-info{
     display: flex;
