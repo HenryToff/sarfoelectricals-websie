@@ -91,15 +91,6 @@ body{
     .main-banner{
         width: auto;
     }
-    .main-banner .imgban-box h2{
-        padding-top: 60px;
-        padding-left: 80px;
-        font-size: 25px;
-       }
-       .main-banner .imgban-box p{    
-        padding-left: 80px;
-        font-size: 18px;
-       }
 }
 
 @media (max-Width: 768px){
@@ -108,11 +99,11 @@ body{
     }  
        .main-banner .imgban-box h2{
         padding-top: 60px;
-        padding-left: 40px;
-        font-size: 30px;
+        padding-left: 30px;
+        font-size: 25px;
        }
        .main-banner .imgban-box p{    
-        padding-left: 40px;
+        padding-left: 30px;
         font-size: 18px;
        }
 }
@@ -125,11 +116,11 @@ body{
    .main-banner .imgban-box h2{
     padding-top: 60px;
     padding-left: 25px;
-    font-size: 18px;
+    font-size: 20px;
    }
    .main-banner .imgban-box p{    
     padding-left: 25px;
-    font-size: 15px;
+    font-size: 14px;
    }
 
 }
