@@ -348,15 +348,7 @@ header .navbar a:hover{
     section{
         padding: 2rem;
     }
-    .main-banner{
-        width: auto;
-    }
-    .main-banner .imgban .imgban-box h2{
-        font-size: 30px;
-    }
-    .main-banner .imgban .imgban-box p{
-        font-size: 20px;
-    }
+ 
 }
 
 @media (max-Width: 768px){
