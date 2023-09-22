@@ -100,11 +100,11 @@ body{
        .main-banner .imgban-box h2{
         padding-top: 50px;
         padding-left: 25px;
-        font-size: 20px;
+        font-size: 25px;
        }
        .main-banner .imgban-box p{    
-        padding-left: 25px;
-        font-size: 14px;
+        padding-left: 23px;
+        font-size: 16px;
        }
 }
 
@@ -116,11 +116,11 @@ body{
    .main-banner .imgban-box h2{
     padding-top: 50px;
     padding-left: 25px;
-    font-size: 20px;
+    font-size: 23px;
    }
    .main-banner .imgban-box p{    
     padding-left: 25px;
-    font-size: 14px;
+    font-size: 16px;
    }
 
 }
