@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-:root{
-    --red: #ff3838;
-}
 *{
-    font-family: 'Nunito', sans-serif; 
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    transition: all .2s linear;
+    margin: 0; 
+    padding: 0;
+}
+body{
+    background-color: #fff;
 }
 .main-banner{
     margin: 0 auto;
@@ -50,12 +45,12 @@
 .imgbanbtn{
     width: 40px;
     height: 40px;
-    background-color: #000;
+    background-color: transparent;
     border-radius: 4px;
     position: absolute;
     top: 180px;
     z-index: 2000;
-    opacity: 0.8;
+    opacity: 0.6;
     cursor: pointer;
 }
 .imgbanbtn:hover{
@@ -64,14 +59,14 @@
 .imgbanbtn-prev{
     left: 10px;
     background-image: url(images/arrow\ left.png);
-    background-size: 40%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 .imgbanbtn-next{
     right: 10px;
     background-image: url(images/arrow\ right.png);
-    background-size: 40%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -96,12 +91,6 @@
     .main-banner{
         width: auto;
     }
-    .main-banner .imgban .imgban-box h2{
-        font-size: 30px;
-    }
-    .main-banner .imgban .imgban-box p{
-        font-size: 20px;
-    }
     .main-banner .imgban-box h2{
         padding-top: 60px;
         padding-left: 80px;
@@ -117,21 +106,14 @@
 
     .main-banner{
         width: auto;
-    }
-    .main-banner .imgban .imgban-box h2{
-        font-size: 27px;
-    }
-    .main-banner .imgban .imgban-box p{
-        font-size: 18px;
-    }
-   
+    }  
        .main-banner .imgban-box h2{
         padding-top: 60px;
-        padding-left: 60px;
+        padding-left: 40px;
         font-size: 20px;
        }
        .main-banner .imgban-box p{    
-        padding-left: 60px;
+        padding-left: 40px;
         font-size: 16px;
        }
 }
@@ -141,21 +123,14 @@
     .main-banner{
         width: 100%;
     }
-    .main-banner  .imgban-box h2{
-        font-size: 20px;
-    }
-    .main-banner .imgban .imgban-box p{
-        font-size: 15px;
-    }
-  
    .main-banner .imgban-box h2{
     padding-top: 60px;
-    padding-left: 30px;
-    font-size: 40px;
+    padding-left: 25px;
+    font-size: 12px;
    }
    .main-banner .imgban-box p{    
-    padding-left: 30px;
-    font-size: 30px;
+    padding-left: 25px;
+    font-size: 10px;
    }
 
 }
