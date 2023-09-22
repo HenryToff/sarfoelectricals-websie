@@ -510,13 +510,12 @@ iframe{
     margin-top: 2rem;
 }
 .brands-container img{
-    width: 100px;
+    width: 200px;
+    height: 100px;
     margin-bottom: 5rem;
-    filter: grayscale(1);
 }
 .brands-container img:hover{
     width: 100px;
-    filter: grayscale(0);
 }
 .footer{
     background-color: #000;
