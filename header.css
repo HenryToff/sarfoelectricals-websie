@@ -103,18 +103,17 @@ body{
 }
 
 @media (max-Width: 768px){
-
     .main-banner{
         width: auto;
     }  
        .main-banner .imgban-box h2{
         padding-top: 60px;
         padding-left: 40px;
-        font-size: 20px;
+        font-size: 30px;
        }
        .main-banner .imgban-box p{    
         padding-left: 40px;
-        font-size: 16px;
+        font-size: 18px;
        }
 }
 
@@ -126,11 +125,11 @@ body{
    .main-banner .imgban-box h2{
     padding-top: 60px;
     padding-left: 25px;
-    font-size: 12px;
+    font-size: 18px;
    }
    .main-banner .imgban-box p{    
     padding-left: 25px;
-    font-size: 10px;
+    font-size: 15px;
    }
 
 }
