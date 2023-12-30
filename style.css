@@ -200,7 +200,7 @@ header .navbar a:hover{
     border: .1rem solid rgba(0,0,0,.3);
     cursor: pointer;
     border-radius: 3rem 0 3rem 0;
-    height: 70rem;
+    height: 75rem;
 }
 .speciality .box-container .box .image{
     height: 100%;
@@ -360,7 +360,7 @@ header .navbar a:hover{
         font-size: 30px;
     }
     .main-banner .imgban .imgban-box p{
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -397,6 +397,9 @@ header .navbar a:hover{
 
     html{
         font-size: 50%;
+    }
+    p{
+        font-size: 2rem;
     }
 }
 
