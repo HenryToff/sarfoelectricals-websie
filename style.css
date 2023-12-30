@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 :root{
     --red: #ff3838;
 }
 *{
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
@@ -28,7 +28,7 @@ section{
 }
 .heading{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 1rem;
     color: #666;
 }
@@ -41,7 +41,7 @@ section{
     border: .1rem solid var(--red);
     color: var(--red);
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 2rem;
     border-radius: .5rem;
     position: relative;
     overflow: hidden;
@@ -67,7 +67,7 @@ section{
 }
 .btn-link{
     color: var(--red);
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 1.7rem;
 }
 .btn-link:hover{
@@ -86,8 +86,8 @@ header{
     box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
 }
 header .logo{
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 3.2rem;
+    font-weight: 600;
     color: #666;
     text-decoration: none;
 }
@@ -95,6 +95,7 @@ header .logo i{
     padding-right: .5rem;
     color: var(--red);
 }
+
 header .navbar a{
     font-size: 2rem;
     margin-left: 2rem;
@@ -109,7 +110,7 @@ header .navbar a:hover{
     cursor: pointer;
     color: #666;
     border: .1rem solid #666;
-    border-radius: .3rem;
+    border-radius: .2rem;
     padding: .5rem 1.5rem;
     display: none;
 }
@@ -135,18 +136,22 @@ header .navbar a:hover{
     padding: 1rem;
 }
 .home .content div .fa{
-    font-size: 28px;
+    font-size: 30px;
     color: #000;
     padding-top: .1rem;
     margin-right: .3rem;
  }
 .home .content h3{
-    font-size: 4rem;
+    font-size: 3rem;
+    color: #333;
+}
+.home .content h2{
+    font-size: 2rem;
     color: #333;
 }
 .home .content p{
-    font-size: 1.7rem;
-    color: #666;
+    font-size: 2rem;
+    color: #2b2a2a;
     padding: 1rem 0;
 }
 .home-service{
@@ -177,7 +182,7 @@ header .navbar a:hover{
     color: #333;
 }
 .home-service .content p{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #666;
     padding: 1rem 0;
 }
@@ -195,7 +200,7 @@ header .navbar a:hover{
     border: .1rem solid rgba(0,0,0,.3);
     cursor: pointer;
     border-radius: 3rem 0 3rem 0;
-    height: 500px;
+    height: 65rem;
 }
 .speciality .box-container .box .image{
     height: 100%;
@@ -213,11 +218,11 @@ header .navbar a:hover{
     margin: 1.5rem 0;
 }
 .speciality .box-container .box .content h3{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #333;
 }
 .speciality .box-container .box .content p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #666;
     padding: 1rem 0;
 }
@@ -311,7 +316,7 @@ header .navbar a:hover{
     padding: .5rem 0;
 }
 .review .box-container .box p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #eee;
     padding: 1rem 0;
 }
@@ -348,7 +353,15 @@ header .navbar a:hover{
     section{
         padding: 2rem;
     }
- 
+    .main-banner{
+        width: auto;
+    }
+    .main-banner .imgban .imgban-box h2{
+        font-size: 30px;
+    }
+    .main-banner .imgban .imgban-box p{
+        font-size: 20px;
+    }
 }
 
 @media (max-Width: 768px){
@@ -395,10 +408,10 @@ header .navbar a:hover{
     padding: 60px 0;
 }
 .blog-content p{
-    font-size: 14px;
+    font-size: 2rem;
 }
 .blog-content h2{
-    font-size: 20px;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 .blog-left img{
@@ -467,27 +480,27 @@ iframe{
     margin-bottom: 5px;
 }
 .contact-col div .fa{
-    font-size: 20px;
+    font-size: 2rem;
     color: #f44336;
     margin: 10px;
     margin-right: 20px;
 }
 .contact-col div P{
     padding: 0;
-    font-size: 15px;
+    font-size: 2rem;
 }
 .contact-col div h5{
-    font-size: 18px;
+    font-size: 2rem;
     margin-bottom: 5px;
     color: #555;
     font-weight: 400;
 }
 .contact-col input, 
 .contact-col textarea{
-    font-size: 15px;
+    font-size: 1.7rem;
     width: 100%;
     padding: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -505,11 +518,9 @@ iframe{
     width: 120px;
     margin-bottom: 5rem;
 }
-.brands-container img:hover{
-    width: 100px;
-}
+
 .footer{
-    background-color: #000;
+    background-color: #161616;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(240px, auto));
     gap: 0.5rem;
@@ -517,24 +528,29 @@ iframe{
 }
 .footer-box h2{
     color: #fff;
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 .footer-box span{
     color: #f44335;
 }
 .footer-box p{
     color: #fff;
-    font-size: 15px;
+    font-size: 1.7rem;
     display: 00.936rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
 }
 .social{
     align-items: center;
 }
 .social a{
-    font-size: 22px;
-    margin-right: 20px;
+    font-size: 4rem;
+    margin-right: 2rem;
     color: #f44335;
 }
 .social a:hover{
@@ -542,20 +558,15 @@ iframe{
 }
 .footer-box h3{
     color: #fff;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
 }
 .footer-box li a{
-    font-size: 15px;
+    font-size: 2rem;
     color: #fff;    
 }
 .footer-box li a:hover{
     color: #f44336;    
-}
-.footer .credit{
-    text-align: center;
-    color:#fff;
-    font-size:1.2rem;
 }
 .contact-info{
     display: flex;
@@ -563,7 +574,7 @@ iframe{
     margin-bottom: 3rem;
 }
 .contact-info span{
-    font-size: 15px;
+    font-size: 2rem;
     color: #f44336;
 }
 
