@@ -203,6 +203,9 @@ header .navbar a:hover{
     border: .1rem solid rgba(0,0,0,.3);
     border-radius: 3rem 0 3rem 0;   
 }
+.speciality .box img{
+    width: 100%;
+}
 .speciality .box-container .box .content{
     text-align: center;
     background: #fff;
@@ -210,6 +213,7 @@ header .navbar a:hover{
 }
 .speciality .box-container .box .content img{
     margin: 1.5rem 0;
+    width: 10rem;
 }
 .speciality .box-container .box .content h3{
     font-size: 2.5rem;
