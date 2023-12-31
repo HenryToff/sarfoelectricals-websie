@@ -1,14 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
 :root{
     --red: #ff3838;
 }
 *{
-    font-family: 'Poppins', sans-serif; 
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
     transition: all .2s linear;
+    font-family: 'Poppins', sans-serif; 
 }
 *::selection{
     background:var(--red); 
@@ -86,7 +87,7 @@ header{
     box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
 }
 header .logo{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     color: #666;
     text-decoration: none;
@@ -153,6 +154,7 @@ header .navbar a:hover{
     font-size: 2rem;
     color: #2b2a2a;
     padding: 1rem 0;
+    text-align: justify;
 }
 .home-service{
     display: flex;
@@ -178,13 +180,14 @@ header .navbar a:hover{
     margin-right: .3rem;
  }
 .home-service .content h3{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #333;
 }
 .home-service .content p{
     font-size: 2rem;
     color: #666;
     padding: 1rem 0;
+    text-align: justify;
 }
 
 .speciality .box-container{
@@ -198,16 +201,7 @@ header .navbar a:hover{
     overflow: hidden;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border: .1rem solid rgba(0,0,0,.3);
-    cursor: pointer;
-    border-radius: 3rem 0 3rem 0;
-    height: 75rem;
-}
-.speciality .box-container .box .image{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top:-100%; left:0;
+    border-radius: 3rem 0 3rem 0;   
 }
 .speciality .box-container .box .content{
     text-align: center;
@@ -218,20 +212,17 @@ header .navbar a:hover{
     margin: 1.5rem 0;
 }
 .speciality .box-container .box .content h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
 }
 .speciality .box-container .box .content p {
     font-size: 2rem;
     color: #666;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
+    text-align: justify;
 }
-.speciality .box-container .box:hover .image{
-    top: 0;
-}
-.speciality .box-container .box:hover .content{
-    transform: translateY(100%) ;
-}
+
+
 .speciality i{
     font-size: 20px;
     color: #f44335;
@@ -318,7 +309,8 @@ header .navbar a:hover{
 .review .box-container .box p{
     font-size: 2rem;
     color: #eee;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
+    text-align: justify;
 }
 .contact{
     background: #fff;
@@ -337,6 +329,7 @@ header .navbar a:hover{
 .contact p{
     font-size: 2rem;
     color: #666;
+
 }
 
 
@@ -357,7 +350,7 @@ header .navbar a:hover{
         width: auto;
     }
     .main-banner .imgban .imgban-box h2{
-        font-size: 30px;
+        font-size: 3rem;
     }
     .main-banner .imgban .imgban-box p{
         font-size: 2rem;
@@ -398,9 +391,7 @@ header .navbar a:hover{
     html{
         font-size: 50%;
     }
-    p{
-        font-size: 2rem;
-    }
+   
 }
 
 /*blog content*/
@@ -531,7 +522,7 @@ iframe{
 }
 .footer-box h2{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
 }
 .footer-box span{
@@ -561,7 +552,7 @@ iframe{
 }
 .footer-box h3{
     color: #fff;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 .footer-box li a{
@@ -574,10 +565,10 @@ iframe{
 .contact-info{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 2.8rem;
 }
 .contact-info span{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #f44336;
 }
 
