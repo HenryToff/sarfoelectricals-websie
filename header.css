@@ -1,209 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+:root{
+    --red: #ff3838;
+}
 *{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
-.hero{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 50px;
+.main-banner{
+    margin: 0 auto;
+    width: 1200px;
+    min-height: 90vh;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
 
 }
-.hero img{
+.main-banner .imgban{
     width: 100%;
+    height: 100%;
     position: absolute;
-    animation: zoom-in 5s linear infinite;
+    top: 0px;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
 }
-@keyframes zoom-in {
-    100%{
-        width: 120%;
-    }  
+.main-banner #imgban4{ 
+    background-image: url(images/brandddd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.context{
+.main-banner #imgban3{ 
+    background-image: url(images/sarfoban.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban2{
+    background-image: url(images/Glightban.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban1{
+    background-image: url(images/nexansban.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    top: 250px;
+    z-index: 2000;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.imgbanbtn:hover{
+    opacity: 1.2;
+}
+.imgbanbtn-prev{
+    left: 10px;
+    background-image: url(images/arrow\ left.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn-next{
+    right: 10px;
+    background-image: url(images/arrow\ right.png);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-banner .imgban-box h2{
     width: 80%;
-    position: absolute;
-    top: 200px;
-    left: 150px;
-    transform: translateY(100px);
-    animation: textup 12s linear infinite;
-}
-
-@keyframes textup{
-    10%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(0px);
-    }   
-}
-
-.context1{
-    animation-delay: 0s;
-}
-.context2{
-    animation-delay: 3s;
-}
-.context3{
-    animation-delay: 6s;
-}
-.context4{
-    animation-delay: 9s;
-}
-
-.context h1{
+    font-weight: 600;
+    padding-top: 100px;
+    padding-left: 50px;
     font-size: 50px;
-    color: #141414;
+    color: #302f2f;
 }
-.context h3{
-    font-size: 40px;
-    color: #141414;
-    font-weight: 100;
-    margin: 0 auto 80px;
+.main-banner .imgban-box p{   
+    width: 80%; 
+    padding-left: 50px;
+    padding-top: 0px;
+    font-size: 30px;
+    color: #302f2f;
+}
+#imgban3 h2 {
+    color: #fff;
+}
+#imgban3 p{
+    color: #fff;
+}
+#imgban1 h2 {
+    color: #a50404;
+}
+#imgban2 p{
+    color: #8d0303;
 }
 
-@media (max-width:991px){
-    
-    .hero .context{
+
+/*media queries */
+@media (max-Width: 991px){
+    .main-banner{
+        width: auto;
+    }
+    .main-banner .imgban .imgban-box h2{
         width: 80%;
-        top: 40px;
+        font-size: 4.5rem;
     }
-    .hero .context h1{
-        font-size: 40px;
-    }
-    .hero .context h3{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 700px){
-    
-    .hero .context{
+    .main-banner .imgban .imgban-box p{
         width: 80%;
-        top: 60px;
-        left: 50px;
+        font-size: 3.5rem;
     }
-    .hero .context h1{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .hero .context h3{
-        font-size: 20px;
-        line-height: 25px;
-    }
+  
 }
-@media (max-width:400px){
+
+@media (max-Width: 768px){
+    .main-banner{
+        width: auto;
+    }
+    .main-banner .imgban .imgban-box h2{
+        width: 90%;
+        font-size: 3.5rem;
+    }
+    .main-banner .imgban .imgban-box p{
+        width: 90%;
+        font-size: 3rem;
+        line-height: 30px;
+    }
+
     
-    .hero .context{
+}
+
+@media (max-Width: 400px){
+
+    .main-banner{
+        width: auto;
+    }
+    .main-banner .imgban .imgban-box h2{
         width: 80%;
-        top: 60px;
+        font-size: 3rem;
     }
-    .hero .context h1{
-        font-size: 20px;
-        line-height: 25px;
+    .main-banner .imgban .imgban-box p{
+        width: 80%;
+        font-size: 2.5rem;
     }
-    .hero .context h3{
-        font-size: 15px;
-        line-height: 18px;
-    }
-}
+  
+   
 
-.context3 h1{
-    color: white;
-}
-.context3 h3{
-    color: white;
-}
-.context1 h1{
-    color: darkred;
-}
-.context2 h3{
-    color: darkred;
-}
-.context2 h1{
-    color: darkblue;
-}
-.slide1{
-    animation: slide1 15s linear infinite;
-}
-.slide2{
-    animation: slide2 15s linear infinite;
-}
-.slide3{
-    animation: slide3 15s linear infinite;
-}
-.slide4{
-    animation: slide4 15s linear infinite;
-}
-@keyframes slide1{
-    0%{
-        visibility: visible;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }  
-}
-
-@keyframes slide2{
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: visible;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: hidden;
-    }  
-}
-@keyframes slide3{
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: visible;
-    }
-    100%{
-        visibility: hidden;
-    }  
-}
-@keyframes slide4{
-    0%{
-        visibility: hidden;
-    }
-    25%{
-        visibility: hidden;
-    }
-    50%{
-        visibility: hidden;
-    }
-    75%{
-        visibility: hidden;
-    }
-    100%{
-        visibility: visible;
-    }  
 }

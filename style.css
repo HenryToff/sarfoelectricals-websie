@@ -195,9 +195,6 @@ header .navbar a:hover{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-.speciality .heading{
-margin-top: 80%;
-}
 .speciality .box-container .box{
     flex: 1 1 30rem;
     position: relative;
@@ -353,15 +350,7 @@ margin-top: 80%;
     section{
         padding: 2rem;
     }
-    .main-banner{
-        width: auto;
-    }
-    .main-banner .imgban .imgban-box h2{
-        font-size: 3rem;
-    }
-    .main-banner .imgban .imgban-box p{
-        font-size: 2rem;
-    }
+ 
 }
 
 @media (max-Width: 768px){
