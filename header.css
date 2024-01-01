@@ -60,7 +60,7 @@
     background-color: #000;
     border-radius: 4px;
     position: absolute;
-    top: 250px;
+    top: 300px;
     z-index: 2000;
     opacity: 0.5;
     cursor: pointer;
@@ -135,11 +135,12 @@
     .main-banner .imgban .imgban-box h2{
         width: 90%;
         font-size: 3.5rem;
-        line-height: 30px;
+        line-height: 35px;
     }
     .main-banner .imgban .imgban-box p{
         width: 80%;
         font-size: 2.5rem;
+        line-height: 28px;
      
     }  
 }
