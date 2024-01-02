@@ -35,11 +35,11 @@
             <div class="blog-left">
                 <div class="comment-box">
                     <h3>Edit our blog page</h3>                  
-                    <form id="form" class="comment-form">
-                        <input type="file" id="new-image" placeholder="Upload Image">
-                        <input type="text" id="new-title" placeholder="Enter Title">
-                        <textarea rows="1" id="new-page" placeholder="Enter Paragraph"></textarea> 
-                        <button type="submit" id="submit" class="btn red-btn" >Post</button>  
+                    <form method="GET" action="blog.html" class="comment-form">
+                        <input type="file" id="image" name="image" placeholder="Upload Image">
+                        <input type="text" name="tittle" placeholder="Enter Tittle">
+                        <textarea rows="2" name="page" placeholder="Enter Paragraph"></textarea> 
+                        <button type="submit" class="btn red-btn" >Post</button>  
                     </form>    
                 </div>  
             </div>  
@@ -56,49 +56,7 @@
 <script src="./admin.js"></script>
 <script src="./script.js"></script>
 
-<script>
 
-    const form = document.getElementById('form');
-    const newtitle = document.getElementById('new-title');
-    const newpage = document.getElementById('new-page');
-    
-    form.addEventListener("submit", function(e) {
-        e.preventDefault()
-
-        const newtitleValue = newtitle.value;
-        const newpageValue = newpage.value;
-
-
-       localStorage.setItem('new-title', newtitleValue);
-       localStorage.setItem('new-page', newpageValue);
-        
-        alert('Blog Posted Successful')
-
-        //window.location.href = "blog.html";
-    })
-
-    // image load
-
-    const newImage = document.getElementById('new-image');
-    const btn = document.getElementById('submit');
-    
-    btn.addEventListener('click', () => {
-
-        //window.location.href = "/blog.html";
-    })
-
-    newImage.addEventListener('change', () =>{
-        const fr = new FileReader();
-        fr.readAsDataURL(newImage.files[0]);
-      
-        fr.addEventListener('load', () => {
-            const newImage = fr.result;
-     
-            localStorage.setItem('new-image', newImage)
-        })
-    })
-
-</script>
 
     
 <!--- jQuery first, then Popper.js, then Bootstrap JS -->

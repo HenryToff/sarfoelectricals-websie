@@ -36,6 +36,34 @@ section{
 .heading span{
     color: var(--red);
 }
+.sub-header{
+    min-height: 60vh;
+    width: 100%;
+    background-image: url(Images/big2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.sub-header h1{
+    font-size: 4rem;
+    color: #222;
+    padding-top: 50px;
+}
+.sub-header p{
+    font-size: 2rem;
+    color: #222;
+}
+.sub-header h2{
+    font-size: 2rem;
+    color: #222;
+    padding: 10px;
+}
+.sub-header .btn{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
 .btn{
     display: inline-block;
     padding: .8rem 3rem;
@@ -379,6 +407,7 @@ header .navbar a:hover{
     .row{
         flex-direction: column;
     }
+   
     
 }
 
@@ -394,7 +423,7 @@ header .navbar a:hover{
 /*blog content*/
 
 .blog-content{
-    width: 60%;
+    width: 80%;
     margin: auto;
     padding: 60px 0;
 }

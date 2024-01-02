@@ -34,9 +34,25 @@
     </header> 
       <!----header section ends --> 
 
+      <section class="sub-header">
+        <div>       
+        <h1>Blog Page</h1>
+        <p> Looking for solutions to enhance your home, complete an industrial project, 
+          Sarfo Electricals is here to assist you every step of the way.<!--Whether you're looking for solutions 
+          to enhance your home, upgrade your business, or complete an industrial project, 
+          Sarfo Electricals is here to assist you every step of the way.
+          A sole distributor of Nexans Kabelmetal and G-Light electrical fittings in Ashanti Region. 
+          We look forward to serving you 
+          and building a brighter, electrifying future together.--></p>  
+          <h2>Know More about Our New product..</h2>
+          <a href="https://wa.me/+233246553183" class="btn"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/+233240616999" class="btn"><i class="fab fa-whatsapp"></i></a>
+        </div>
+       </section> 
+
       
       <!----header section Start -->
-      <section class="home" id="home">
+      <!--<section class="home" id="home">
         <div class="content">
           <h3>OUR BLOG PAGE</h3>
           <p>We invite you to explore our wide range of electrical products, from lighting 
@@ -57,17 +73,16 @@
         <div class="image">
           <img src="images/ban.png" alt="">
         </div>
-      </section> 
+      </section>--> 
        <!----header section ends --> 
 
     
        <!--blog page content-->
     <section class="blog-content">
-      <div>
           <div  class="blog-left">
-              <img id="new-image" src="">
-              <h2 id="new-title"> </h2>
-              <p id="new-page"> </p>
+              <img id="image" src="">
+              <h2 id="tittle"> </h2>
+              <p id="page"> </p>
               <div class="comment-box">
                   <h3>Leave Comment</h3>
                   <form class="comment-form">
@@ -78,7 +93,6 @@
                   </form>    
               </div>    
           </div>  
-      </div>
   </section>    
 
       
@@ -139,22 +153,6 @@
      
     <!--- Optional JavaScript -->
 
-    <script>
-
-      const newtitle1 = localStorage.getItem('new-title');
-      const newpage1 = localStorage.getItem('new-page');
-
-      document.getElementById('new-title').textContent = newtitle1;
-      document.getElementById('new-page').textContent = newpage1;
-
-      // image load
-
-      const newImage1 = localStorage.getItem('new-image');
-      document.getElementById('new-image').src = newImage1;
-
-      document.body.appendChild(img);
-
-    </script>
 
 
     <script src="script.js"></script>
