@@ -179,7 +179,7 @@ header .navbar a:hover{
     color: #333;
 }
 .home .content p{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #2b2a2a;
     padding: 1rem 0;
 }
@@ -211,7 +211,7 @@ header .navbar a:hover{
     color: #333;
 }
 .home-service .content p{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #666;
     padding: 1rem 0;
 }
@@ -245,9 +245,11 @@ header .navbar a:hover{
     font-weight: 600;
     font-size: 2.5rem;
     color: #333;
+    padding: 1rem 2rem;
+    text-align: start;
 }
 .speciality .box-container .box .content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #666;
     padding: 1rem 2rem;
     text-align: start;
@@ -314,7 +316,7 @@ header .navbar a:hover{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
     border-radius: .5rem;
     flex: 1 1 30rem;
-    background: #050f1d;
+    background: #05273a;
     margin-top: 6rem;
 }
 .review .box-container .box img{
@@ -370,10 +372,10 @@ header .navbar a:hover{
         font-size: 55%;
     }
     header{
-       padding: 2rem;
+       padding: 4rem;
     }
     section{
-        padding: 2rem;
+        padding: 4rem;
     }
  
 }
@@ -552,7 +554,7 @@ iframe{
 }
 
 .footer{
-    background-color: #050f1d;
+    background-color: #05273a;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(240px, auto));
     gap: 0.5rem;
@@ -568,7 +570,7 @@ iframe{
 }
 .footer-box p{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: 00.936rem;
     margin-bottom: 1rem;
 }
@@ -580,7 +582,7 @@ iframe{
     align-items: center;
 }
 .social a{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-right: 2rem;
     color: #f44335;
 }
@@ -589,7 +591,7 @@ iframe{
 }
 .footer-box h3{
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 .footer-box li a{
@@ -605,7 +607,7 @@ iframe{
     margin-bottom: 2.8rem;
 }
 .contact-info span{
-    font-size: 1.5rem;
-    color: #f44336;
+    font-size: 1.7rem;
+    color: #b3afaf;
 }
 
