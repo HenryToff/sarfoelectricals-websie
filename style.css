@@ -39,7 +39,7 @@ section{
 .sub-header{
     min-height: 60vh;
     width: 100%;
-    background-image: url(Images/banner.jpg);
+    background-image: url(images/banner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
