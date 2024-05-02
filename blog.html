@@ -28,7 +28,7 @@
             <a href="service.html">Services</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
+            <a href="./log/login.html">Login</a>
          </nav>
 
     </header> 
@@ -36,7 +36,7 @@
 
       <section class="sub-header">
         <div>       
-        <h1>Blog Page</h1>
+        <h1>Blog /</h1>
         <p> Looking for solutions to enhance your home, complete an industrial project, 
           Sarfo Electricals is here to assist you every step of the way.<!--Whether you're looking for solutions 
           to enhance your home, upgrade your business, or complete an industrial project, 
@@ -50,48 +50,25 @@
         </div>
        </section> 
 
-      
-      <!----header section Start -->
-      <!--<section class="home" id="home">
-        <div class="content">
-          <h3>OUR BLOG PAGE</h3>
-          <p>We invite you to explore our wide range of electrical products, from lighting 
-            solutions to wiring and electrical accessories. Whether you're looking for solutions 
-            to enhance your home, upgrade your business, or complete an industrial project, 
-            Sarfo Electricals is here to assist you every step of the way.
-            A sole distributor of Nexans Kabelmetal and G-Light fittings in Ashanti Region. 
-            We look forward to serving you 
-            and building a brighter, electrifying future together.</p>            
-            <h2>Visit Us to know more....</h2>
-              <a href="https://wa.me/+233246553183" class="btn-link">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-              <a href="https://wa.me/+233240616999" class="btn-link">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-        </div>
-        <div class="image">
-          <img src="images/ban.png" alt="">
-        </div>
-      </section>--> 
-       <!----header section ends --> 
 
     
        <!--blog page content-->
     <section class="blog-content">
           <div  class="blog-left">
-              <img id="image" src="">
-              <h2 id="tittle"> </h2>
-              <p id="page"> </p>
+
+              <table id="table">
+              </table>     
+
               <div class="comment-box">
                   <h3>Leave Comment</h3>
+
                   <form class="comment-form">
                       <input type="text"  placeholder="Enter Name">
                       <input type="email" placeholder="Enter Email">
                       <textarea rows="5"  placeholder="Your Comment"></textarea> 
-                      <button type="" class="btn red-btn">Post Comment</button>  
+                      <button class="btn">Post Comment</button>  
                   </form>    
-              </div>    
+              </div>  
           </div>  
   </section>    
 
@@ -153,9 +130,51 @@
      
     <!--- Optional JavaScript -->
 
-
-
+    
     <script src="script.js"></script>
+
+    <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, set, ref, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyBFJ9KX41whcqrpbuQcwmd5X8JlMt9JSn8",
+        authDomain: "sign-app-7bdeb.firebaseapp.com",
+        databaseURL: "https://sign-app-7bdeb-default-rtdb.firebaseio.com",
+        projectId: "sign-app-7bdeb",
+        storageBucket: "sign-app-7bdeb.appspot.com",
+        messagingSenderId: "1075670259097",
+        appId: "1:1075670259097:web:d0951b1098e9b4d530ef08"
+    };
+
+    //Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    
+      
+      const blog = ref(database, 'BlogPost')
+      get(blog).then((snapshot)=>{
+
+        const data = snapshot.val()
+       
+
+        let html = "";
+        const table = document.getElementById('table');
+
+        for(const key in data){
+            const { Tittle, Page, Image } = data[key]
+          
+            html += `<tr><td><img src="${Image}"></td></tr> `        
+            html += `<tr><td><h1>${Tittle}</h1></td></tr> `        
+            html += `<tr><td><p>${Page}</p></td></tr> `        
+        }
+
+        table.innerHTML = html
+
+      }) 
+
+      </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 

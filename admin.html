@@ -34,30 +34,90 @@
         <div>
             <div class="blog-left">
                 <div class="comment-box">
-                    <h3>Edit our blog page</h3>                  
-                    <form method="GET" action="blog.html" class="comment-form">
-                        <input type="file" id="image" name="image" placeholder="Upload Image">
-                        <input type="text" name="tittle" placeholder="Enter Tittle">
-                        <textarea rows="2" name="page" placeholder="Enter Paragraph"></textarea> 
-                        <button type="submit" class="btn red-btn" >Post</button>  
-                    </form>    
-                </div>  
+                    <h3>Write a New Blog Post</h3>                               
+
+                        <input type="text" name="tittle" id="tittle" placeholder="Enter Tittle">
+                        <textarea rows="2" name="page" id="page" placeholder="Enter Paragraph"></textarea> 
+                        <input type="file"  name="image" id="image" placeholder="Upload Image" >
+                        <input type="submit" name="submit_blogBtn" id="blogBtn" class="login-btn" value="Post">
+
+                        <!--<button type="button" id="blogPost" class="btn">Post</button>-->
+                                    
+                </div>              
             </div>  
         </div>
-        <button class="logout-btn">Logout</button>  
+        
 
+        <button class="logout-btn">Logout</button>  
     </section> 
+
  
   
 
      
     <!--- Optional JavaScript -->
 <!--Javascript for toggle Menu-->
-<script src="./admin.js"></script>
-<script src="./script.js"></script>
+    <script>
+
+    const logoutBtn = document.querySelector(".logout-btn")
+
+    logoutBtn.addEventListener("click",()=>{
+        window.location.replace("login.html")
+    })
+    </script>
+
+
+    <script src="./script.js"></script>
+    <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyBFJ9KX41whcqrpbuQcwmd5X8JlMt9JSn8",
+        authDomain: "sign-app-7bdeb.firebaseapp.com",
+        databaseURL: "https://sign-app-7bdeb-default-rtdb.firebaseio.com",
+        projectId: "sign-app-7bdeb",
+        storageBucket: "sign-app-7bdeb.appspot.com",
+        messagingSenderId: "1075670259097",
+        appId: "1:1075670259097:web:d0951b1098e9b4d530ef08"
+    };
+
+    //Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+
+    blogBtn.addEventListener('click', (e) =>{
+
+       const image = document.getElementById('image').files[0];
+       
+       const tittle =  document.getElementById('tittle').value;
+       const page = document.getElementById('page').value;
+       const id = Math.floor(Math.random()*100)
+                                        
+    // ..
+    
+      set(ref(database, 'BlogPost/' + id), {
+      Image: image.src,  
+      Tittle: tittle,
+      Page: page
+
+    });
+    
+    alert('Blog Posted Successfully!'); 
+
+        // Update the h1 tag with the entered data
+        //document.getElementById('blogtittle').innerText = tittle;
+        //document.getElementById('blogpage').innerText = page;
+                         
+         //window.location.href = "login.html";   
+                         
+});
 
 
 
+
+    </script>
     
 <!--- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
